@@ -1,1 +1,28 @@
 // Mixins in here
+.flex-row-mixin{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.section-padding-border{
+    border-bottom: 2pt dotted lightgray;
+}
+.button-mixin{
+    display: block;
+    background-color: teal;
+    color: white;
+    font-size: 1.6rem;
+    height: 45px;
+    width: 200px;
+    border-radius: 10px;
+    margin: 0 10px 20px;
+    text-align: center;
+   padding-top: 15px;
+   @media @phone{
+        width: 375px;
+}
+}
+.section-padding-phone-mixin{
+    padding: 0 4%;
+}
