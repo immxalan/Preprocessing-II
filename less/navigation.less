@@ -1,1 +1,25 @@
 // Navigation Styles here
+.nav-section{
+    .section-padding-border;
+    @media @phone{
+        padding-bottom: 1%;
+    }
+    .nav{
+        .flex-row-mixin;
+        @media @phone{
+            flex-flow: column wrap;
+        }
+        .nav-title{
+            margin-top:3%
+        }
+        .nav-elements-container{
+            .flex-row-mixin;
+            justify-content: space-evenly;
+            width: 50%;
+            font-size: 1.4rem;
+            @media @phone{
+                width:100%;
+            }
+        }
+    }
+}
